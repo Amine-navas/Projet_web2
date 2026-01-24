@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senbati - Mon Site Personnel</title>
+    <link rel="stylesheet" href="TP.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mon Site Personnel</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#accueil" onclick="showSection('accueil'); return false;">Accueil</a></li>
+            <li>
+                <a href="#saisons" onclick="showSection('saisons'); return false;">Saisons</a>
+                <ul>
+                    <li><a href="#ete" onclick="showSection('ete'); return false;">Été</a></li>
+                    <li><a href="#printemps" onclick="showSection('printemps'); return false;">Printemps</a></li>
+                    <li><a href="#automne" onclick="showSection('automne'); return false;">Automne</a></li>
+                    <li><a href="#hiver" onclick="showSection('hiver'); return false;">Hiver</a></li>
+                </ul>
+            </li>
+            <li><a href="#passions" onclick="showSection('passions'); return false;">Passions</a></li>
+            <li><a href="#contact" onclick="showSection('contact'); return false;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="accueil" class="active">
+            <h2>Bienvenue sur mon site !</h2>
+            <p>Découvrez qui je suis et mes passions.</p>
+            <p>Je m'appelle Senbati Amine Aymen, Passionné par les mathématiques et les sciences.</p>
+        </section>
+
+        <section id="saisons">
+            <h2>Les Saisons</h2>
+            <p>Chaque saison apporte ses activités et ambiances.Par exemple, l'été est pour les vacances et les sorties
+                en plein air.</p>
+        </section>
+
+        <section id="passions">
+            <h2>Mes Passions</h2>
+            <p>Gaming, Automobile, Développement Web...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Me Contacter</h2>
+            <form onsubmit="envoyer(); return false;">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" required>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" required>
+
+                <label for="age">Âge :</label>
+                <input type="number" id="age" min="13" max="99" required>
+
+                <label>Genre :</label>
+                <input type="radio" id="masculin" name="genre" value="Masculin">
+                <label for="masculin" style="display:inline;">Masculin</label>
+                <input type="radio" id="feminin" name="genre" value="Féminin">
+                <label for="feminin" style="display:inline;">Féminin</label>
+
+                <label for="date_naissance">Date de naissance :</label>
+                <input type="date" id="date_naissance" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <div>
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Réinitialiser">
+                </div>
+
+                <div id="resultat"></div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Senbati - Site Personnel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
