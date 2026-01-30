@@ -151,6 +151,17 @@ footer {
   border-radius: 5px;
 }
 
-.saison h3:hover {
+.saison#automne h3:hover {
   background-color: orange;
+}
+
+.saison#hiver h3:hover {
+  background-color: lightblue;
+}
+
+.saison#printemps h3:hover {
+  background-color: lightgreen;
+}
+.saison#ete h3:hover {
+  background-color: yellow;
 }
