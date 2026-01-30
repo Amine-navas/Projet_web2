@@ -134,3 +134,23 @@ footer {
   border-radius: 20px;
   box-shadow: 20px 10px 10px black;
 }
+
+.saison {
+  display: none;
+  margin-top: 15px;
+}
+
+.saison.active {
+  display: block;
+}
+
+.saison h3 {
+  cursor: pointer;
+  background-color: #ccc;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.saison h3:hover {
+  background-color: orange;
+}
