@@ -19,10 +19,13 @@
             <li>
                 <a href="#saisons" onclick="showSection('saisons'); return false;">Saisons</a>
                 <ul>
-                    <li><a href="#ete" onclick="showSection('ete'); return false;">Été</a></li>
-                    <li><a href="#printemps" onclick="showSection('printemps'); return false;">Printemps</a></li>
-                    <li><a href="#automne" onclick="showSection('automne'); return false;">Automne</a></li>
-                    <li><a href="#hiver" onclick="showSection('hiver'); return false;">Hiver</a></li>
+                    <li><a href="#" onclick="showSection('saisons'); showSaison('ete'); return false;">Été</a></li>
+                    <li><a href="#"
+                            onclick="showSection('saisons'); showSaison('printemps'); return false;">Printemps</a></li>
+                    <li><a href="#" onclick="showSection('saisons'); showSaison('automne'); return false;">Automne</a>
+                    </li>
+                    <li><a href="#" onclick="showSection('saisons'); showSaison('hiver'); return false;">Hiver</a></li>
+
                 </ul>
             </li>
             <li><a href="#passions" onclick="showSection('passions'); return false;">Passions</a></li>
@@ -34,22 +37,61 @@
         <section id="accueil" class="active">
             <h2>Bienvenue sur mon site !</h2>
             <p><big><u>Découvrez qui je suis et mes passions.</u></big></p>
-            <p>Je m'appelle Senbati Amine Aymen. J'ai obtenu mon baccalauréat, option Mathématiques A, en 2023, puis
-                j'ai repassé le baccalauréat en 2024, option Sciences Physiques.
+            <p>Je m'appelle Senbati Amine Aymen. J'ai obtenu mon baccalauréat en Mathématiques A en 2023, puis j'ai
+                décidé de le repasser en Sciences Physiques en 2024, en parallèle avec mes études universitaires dans
+                une autre université.
 
-                Malgré mes succès en 2023, mon rêve était d'accéder à l'ERA (cycle ingénieur), j'ai été
-                éliminé lors du
-                test physique, l'une des conditions nécessaires n'ayant pas été remplie (la taille).
+                Mon rêve a toujours été d'intégrer l'ERA (cycle ingénieur), et j'espérais aussi tenter la médecine
+                militaire. Malheureusement, je n'ai pas réussi le test physique, car je ne remplissais pas l'une des
+                conditions importantes : la taille.
 
-                Malgré cela, j'ai continué mon parcours, mais cette fois dans le domaine de l'informatique et de la
-                cybersécurité. </p>
+                Même si ce fut un moment difficile, je n'ai pas abandonné. J'ai continué mon parcours dans un domaine
+                qui me passionne : l'informatique et la cybersécurité. Chaque expérience m'a appris quelque chose et m'a
+                rapproché de mes objectifs. </p>
         </section>
 
         <section id="saisons">
             <h2>Les Saisons</h2>
-            <p>Chaque saison apporte ses activités et ambiances.Par exemple, l'été est pour les vacances et les sorties
+            <p>Chaque saison apporte ses activités et ambiances. Par exemple, l'été est pour les vacances et les sorties
                 en plein air.</p>
+
+            <div class="saison" id="ete">
+                <h3>🌞 Été</h3>
+                <p>
+                    En été, le rythme d'étude est plus léger à cause de la chaleur et des vacances.<br>
+                    Je révise tranquillement ou j'apprends de nouvelles choses par curiosité.<br>
+                    Le niveau de difficulté est faible.
+                </p>
+            </div>
+
+            <div class="saison" id="printemps">
+                <h3>🌸 Printemps</h3>
+                <p>
+                    Le printemps est une bonne période pour étudier sérieusement au Maroc.<br>
+                    La météo est agréable et la concentration est meilleure.<br>
+                    Le niveau de difficulté est moyen.
+                </p>
+            </div>
+
+            <div class="saison" id="automne">
+                <h3>🍂 Automne</h3>
+                <p>
+                    En automne, l'année universitaire commence vraiment.<br>
+                    Le travail augmente avec les nouveaux cours et les contrôles.<br>
+                    Le niveau de difficulté devient élevé.
+                </p>
+            </div>
+
+            <div class="saison" id="hiver">
+                <h3>❄️ Hiver</h3>
+                <p>
+                    En hiver, les études sont plus intenses avec les examens.<br>
+                    Le froid aide à rester concentré mais la fatigue peut apparaître.<br>
+                    Le niveau de difficulté est élevé.
+                </p>
+            </div>
         </section>
+
 
         <section id="passions">
             <h2>Mes Passions</h2>
