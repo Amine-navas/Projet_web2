@@ -24,7 +24,7 @@ function envoyer() {
         return;
     }
 
-    let genre = masculin ? "Masculin" : "Féminin";
+    genre = masculin ? "Masculin" : "Féminin";
 
     resultat.innerHTML = 
         "Message envoyé !<br>" +
@@ -37,4 +37,14 @@ function envoyer() {
     
     resultat.style.backgroundColor = "green";
     resultat.style.color = "white";
+}
+
+function showSaison(id) {
+    saisons = document.getElementsByClassName("saison");
+
+    for ( i = 0; i < saisons.length; i++) {
+        saisons[i].classList.remove("active");
+    }
+
+    document.getElementById(id).classList.add("active");
 }
